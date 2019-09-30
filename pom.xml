@@ -155,6 +155,7 @@
     <surefire-log4j.file>file://${project.basedir}/src/test/resources/log4j-surefire.properties</surefire-log4j.file>
     <thrift.version>0.12.0</thrift.version>
     <jetty.version>7.6.0.v20120127</jetty.version>
+    <io.confluent>3.3.0</io.confluent>
     <hbase.version>1.2.3</hbase.version>
     <codehaus-jackson.version>1.9.13</codehaus-jackson.version>
     <notice.dir>${project.basedir}</notice.dir>
@@ -163,6 +164,7 @@
     <skipITs>${skipTests}</skipITs>
     <skipUTs>${skipTests}</skipUTs>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.multiModuleProjectDirectory>/Users/qianwang/Downloads/apache/incubator-hudi</maven.multiModuleProjectDirectory>
   </properties>
 
   <scm>
@@ -897,6 +899,10 @@
       <snapshots>
         <enabled>false</enabled>
       </snapshots>
+    </repository>
+    <repository>
+      <id>confluent.io</id>
+      <url>http://packages.confluent.io/maven/</url>
     </repository>
   </repositories>
 
