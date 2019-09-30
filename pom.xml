@@ -147,6 +147,7 @@
     <hive.version>2.3.1</hive.version>
     <metrics.version>4.0.2</metrics.version>
     <spark.version>2.1.0</spark.version>
+    <io.confluent>3.0.0</io.confluent>
     <avro.version>1.7.7</avro.version>
     <scala.version>2.11.8</scala.version>
     <scala.libversion>2.11</scala.libversion>
@@ -163,6 +164,7 @@
     <skipITs>${skipTests}</skipITs>
     <skipUTs>${skipTests}</skipUTs>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.multiModuleProjectDirectory>/Users/qwang8/Downloads/apache/incubator-hudi</maven.multiModuleProjectDirectory>
   </properties>
 
   <scm>
@@ -897,6 +899,10 @@
       <snapshots>
         <enabled>false</enabled>
       </snapshots>
+    </repository>
+    <repository>
+      <id>confluent.io</id>
+      <url>http://packages.confluent.io/maven/</url>
     </repository>
   </repositories>
 
